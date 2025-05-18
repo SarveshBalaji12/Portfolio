@@ -5,6 +5,8 @@ Welcome to my personal portfolio website! This site showcases my work, skills, p
 🌐 **Live Website**: [sarveshbalajiportfolio.netlify.app](https://sarveshbalaji.netlify.app)
 
 ---
+### 🖥️ Homepage
+![Homepage Screenshot](Images/portfolio.png)
 
 ## 🔍 Overview
 
