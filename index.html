@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Sarvesh Balaji - Portfolio Website">
+    <meta name="theme-color" content="#000428">
+    <title>Sarvesh Balaji</title>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader-content">
+            <div class="circular-loader">
+                <div class="loader-circle"></div>
+                <div class="loader-circle"></div>
+                <div class="loader-circle"></div>
+            </div>
+            <div class="loader-text">Loading your experience...</div>
+            <div class="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Galaxy Video Background -->
+        <video class="back-video" playsinline autoplay muted loop preload="auto">
+            <source src="Videos/galaxy.mp4" type="video/mp4">
+        </video>
+        
+        <header>
+            <div class="left">
+                <img src="Images/name.PNG" alt="Sarvesh Balaji logo" width="40" height="40">
+                <h1><span style="color:#72a1de">Sarvesh </span>Balaji</h1>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li class="left-link"><a href="#about-section">About</a></li>
+                    <li class="center-link"><a href="#skills-section">Skills</a></li>
+                    <li class="right-link"><a href="#projects-section">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="box-icons">
+                <a href="https://github.com/SarveshBalaji12" aria-label="GitHub Profile"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/s-sarvesh-balaji/" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin-square'></i></a>
+            </div>    
+        </header>
+
+        <!-- Mobile typing text -->
+        <div class="mobile-typing-wrapper">
+            <span class="typing-text"></span>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <div class="typing-wrapper">
+                <span class="typing-text"></span>
+            </div>
+        </div>
+
+        <!-- Mobile crossbar -->
+        <nav class="mobile-crossbar">
+            <div class="mobile-crossbar-nav">
+                <a href="#about-section"><i class='bx bx-user'></i></a>
+                <a href="#skills-section"><i class='bx bx-code-alt'></i></a>
+                <a href="#projects-section"><i class='bx bx-folder'></i></a>
+                <a href="#contact-section"><i class='bx bx-envelope'></i></a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-info autoBlur">
+                <div class="hero-info-title">
+                    <i class='bx bxl-sketch'></i>
+                    Developer Portfolio
+                </div>
+                <h1>
+                    Providing <span class="gradient">the best</span> Project <span class="gradient">Experience</span>
+                </h1>
+                <p>
+                    I'm a Developer skilled in web & software development, with experience in machine learning and data analytics.    
+                </p>
+                <button id="contact-btn">
+                    <i class='bx bx-send'></i>
+                    Contact Me
+                </button>
+            </div>
+            <div class="hero-vid-box">
+                <!-- 3D model or animation can be added here -->
+            </div>
+            <div class="scroll-down" id="scroll-down">
+                <!-- Scroll down indicator -->
+            </div>
+        </section>
+
+        <section class="info-section" id="about-section">
+            <h1 class="section-title autoDisplay">Hello,There👋</h1>
+            <div class="info-cards">
+                <div class="card">
+                    <h1>
+                        Hi there, I'm Sarvesh Balaji
+                    </h1>
+                    <p>
+                        Currently pursuing my BE in Computer Science with specialization in Data Science.
+                    </p>
+                    <img src="Images/grid1.png" alt="Grid 1">
+                </div>
+                <div class="card">
+                    <h1 id="se">
+                        Tech Stack
+                    </h1>
+                    <p id="sf">
+                        Specialized in a variety of languages, frameworks and tools that allow me to build robust and scalable applications.
+                    </p>
+                    <img src="Images/grid2.png" alt="Grid 2">
+                </div>
+                <div class="card">
+                    <h1 id="sd">
+                        I'm very flexible with time zone, communications and locations.
+                    </h1>
+                    <video autoplay loop muted playsinline src="Videos/glob.mp4" type="video/mp4"></video>            
+                    <button id="contact-card-btn"><i class='bx bx-link-external'></i>Contact Me</button>
+                </div>
+                <div class="card">
+                    <h1>
+                        Passion for coding
+                    </h1>
+                    <p>
+                        Passionate developer who loves solving problems through code. Always eager to learn and explore new technologies.
+                    </p>
+                    <img src="Images/grid4.png" alt="Grid 4">
+                </div>
+            </div>
+        </section>
+
+        <section class="my-projects" id="projects-section">
+            <h1 class="section-title autoDisplay">My Projects👨‍💻</h1>
+            <div class="project-card">
+                <div class="project-vidbox autoBlur">
+                    <video id="project1" muted src="Videos/pro1.mp4"></video>
+                </div>
+                <div class="project-info fadeInRight">
+                    <h1>AI-Themed <span class="gradient">Landing</span> Page</h1>
+                    <p>This is a modern, responsive landing page focused on the transformative power of Artificial Intelligence. Built using only <b>HTML, CSS and spline.</b></p>
+                    <button class="website-btn"><i class='bx bx-link-external'></i>Website</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section" id="skills-section">
+            <h1 class="section-title autoDisplay">
+                My Skills💪
+            </h1>
+            <div class="skills-box">
+                <div class="designer autoDisplay">
+                    <h1 class="gradient">ML Engineer</h1>
+                    <p>I Have expertise in ML algos and Data analytics, turning data into insights and building smart, user-friendly solutions</p>  
+                </div>
+
+                <img class="skills-image" src="Images/brain.png" alt="Brain illustration">
+
+                <div class="coder autoDisplay">
+                    <h1 class="gradient">Coder<i class='bx bx-code-alt' style="align-items: center;"></i></h1>
+                    <p>I am skilled in HTML, CSS, Javascript and frameworks like React and Node.js. I also have expertise with database management using MongoDB and MYSQL.</p>
+                </div>
+
+                <div class="slider" id="skills-slider" reverse="true"
+                    style="--width:63px;
+                           --height:60px;
+                           --quantity:9;">
+                    <div class="list">
+                        <div class="item" style="--position:1"><img src="Images/1.png" alt="skill"></div>
+                        <div class="item" style="--position:2"><img src="Images/2.png" alt="skill"></div>
+                        <div class="item" style="--position:3"><img src="Images/3.png" alt="skill"></div>
+                        <div class="item" style="--position:4"><img src="Images/6.png" alt="skill"></div>
+                        <div class="item" style="--position:-1"><img src="Images/7.png" alt="skill"></div>
+                        <div class="item" style="--position:-2"><img src="Images/8.png" alt="skill"></div>
+                        <div class="item" style="--position:-3"><img src="Images/9.png" alt="skill"></div>
+                        <div class="item" style="--position:-4"><img src="Images/10.png" alt="skill"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact-section">
+            <div class="social-box autoBlur">
+                <a href="tel:+917975588571"><i class='bx bxs-phone-call'></i> +91 7975588571</a>
+                <a href="https://www.linkedin.com/in/s-sarvesh-balaji/" target="_blank"><i class='bx bxl-linkedin'></i>S Sarvesh Balaji</a>
+            </div>
+
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <p>"Need a new website, a better platform, or a unique project? I'm ready to jump in."</p>
+                <input type="hidden" name="access_key" value="5de8a45e-7103-4706-9052-967550793692">
+                <p>Full Name</p>
+                <input id="name" name="name" type="text" placeholder="Your Full Name" required>
+
+                <p>Email Address</p>
+                <input id="email" name="email" type="email" placeholder="Your Email" required>
+
+                <p>Your Message</p>
+                <textarea id="message" name="message" placeholder="Share your thoughts....." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <footer>
+            <h1>
+                Copyright <i class='bx bx-copyright'></i> sarvesh, Made by Sarvesh Balaji
+            </h1>
+        </footer>
+
+        <!-- Back to top button -->
+        <div id="back-to-top" class="back-to-top">
+            <i class='bx bx-up-arrow-alt'></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="app.js" defer></script>
+</body>
+</html>
